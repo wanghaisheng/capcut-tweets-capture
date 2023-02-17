@@ -14,8 +14,8 @@ name: Scrape depression tweets
 on:
 #   push:
   workflow_dispatch:
-#   schedule:
-#   - cron: '0 0 * * *' # @daily
+  schedule:
+  - cron: '0 0 * * *' # @daily
 
 jobs:
   scheduled:
