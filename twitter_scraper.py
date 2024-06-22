@@ -1,6 +1,7 @@
 import datetime
 import os
 # import twint
+from gettweets import get_tweets
 import pathlib
 
 
@@ -38,7 +39,11 @@ def scrape_twint():
 
 if __name__ == "__main__":
     # scrape_twint()
-    sns_scrape()
+    # sns_scrape()
+    text=get_tweets(HASHTAG)
+    if text:
+        with open (JSON_FILENAME+'.txt',encoding='utf8') as f:
+            f.write(text)
 
 
 # reference
