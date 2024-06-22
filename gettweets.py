@@ -1,11 +1,11 @@
 import requests
 from gettoken import get_token
 
-def get_tweets():
+def get_tweets(search_keywords):
   url = "https://cdn.syndication.twimg.com/tweet-result"
   select_token = 0
   
-  search_keywords = "How much is the fish?"
+  # search_keywords = "How much is the fish?"
   params = {
       "id":get_token()[select_token],
       "lang":"en",
