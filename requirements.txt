@@ -1,1 +1,2 @@
-git+https://github.com/JustAnotherArchivist/snscrape.git
+#git+https://github.com/JustAnotherArchivist/snscrape.git
+tweety-ns
